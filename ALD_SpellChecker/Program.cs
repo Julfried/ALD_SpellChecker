@@ -21,12 +21,13 @@ public class SpellChecker
         {
             // Read all lines from the dictionary file
             string[] words = File.ReadAllLines("..\\..\\..\\..\\SinglyLinkedList\\german.dic", Encoding.UTF8);
-
+            
             foreach (var word in words)
             {
                 // Add the word to the reference dictionary
                 referenceDictionary.Add(word);
             }
+            
         }
         catch (FileNotFoundException)
         {
